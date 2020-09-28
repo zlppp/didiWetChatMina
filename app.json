@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/api",
+    "pages/selectedAddress/selectedAddress",
+    "components/icon-common/icon-common",
+    "pages/toEndAddress/toEndAddress",
+    "components/selected-city/index",
+    "pages/waitTaxi/waitTaxi",
+    "pages/order/order"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我要打车",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "正在获取您的位置信息"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
