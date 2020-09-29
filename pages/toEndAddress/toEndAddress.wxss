@@ -1,0 +1,41 @@
+
+.suggestion-list {
+  margin-top: 100rpx;
+  padding-top: 5rpx;
+  background: #fff;
+  font-size: 30rpx;
+}
+.suggestion-item {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.suggestion-item-title {
+  margin-bottom: 8rpx;
+  font-size: 30rpx;
+}
+.suggestion-item-detail {
+  font-size: 25rpx;
+  color: #999;
+}
+.icon-city {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 8rpx;
+}
+.icon-drop {
+  width: 40rpx;
+  height: 40rpx;
+}
+.city-label {
+  width: 120rpx;
+  padding: 0 20rpx;
+  text-align: center;
+}
+.city-search {
+  width: 250rpx;
+  height: 100rpx;
+  padding: 0 10rpx;
+}
+/* .search-input {
+  width: 185rpx !important;
+} */

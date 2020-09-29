@@ -1,0 +1,38 @@
+.city-item {
+  padding: 25rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+  background: #fff;
+  font-size: 30rpx;
+}
+.city-list {
+  margin-top: 100rpx;
+}
+.city-search {
+  width: 140rpx;
+  height: 40rpx;
+  text-align: center;
+}
+.address-input {
+  width: 140rpx;
+}
+.letter-name {
+  padding: 25rpx;
+  background: #f7f7f7;
+  font-size: 32rpx;
+  color: #999;
+}
+.letter-fast {
+  position: fixed;
+  top: 200rpx;
+  right: 30rpx;
+  padding: 15rpx;
+  background: #f7f7f7;
+  color: #999;
+  border-radius: 4rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+.letter-fast-index {
+  margin-bottom: 4rpx;
+  text-align: center;
+}

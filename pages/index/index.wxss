@@ -1,0 +1,110 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-car-model {
+  padding: 30rpx;
+  font-size: 32rpx;
+}
+.userinfo-avatar {
+  width: 300rrpx;
+  height: 300rrpx;
+  margin: 40rrpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200rpx;
+}
+.car-main {
+  padding: 20rpx 10rpx;
+  background: #f7f8f9;
+}
+.adress-spot {
+  padding: 30rpx;
+  font-size: 32rpx
+}
+.icon-siping {
+  display: inline-block;
+  width: 20rpx;
+  height: 20rpx;
+  margin-right: 40rpx;
+  border-radius: 50%;
+  background: #3CBCA3;
+}
+.icon-siping-yellow {
+  background: #F59454;
+}
+.confim-button {
+  width: 100% !important;
+  margin-top: 20rpx;
+  padding: 25rpx 20rpx;
+  background: #494B5A;
+  color: #fff;
+  font-weight: normal;
+  font-size: 36rpx;
+}
+.header-avatar {
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%;
+  margin-right: 15rpx;
+}
+.current-car {
+  color: #F69C68;
+}
+.calculate-warp {
+  height: 300rpx;
+  padding: 30rpx 15rpx;
+  margin: 30rpx auto 0;
+  background: #fff;
+  border-radius: 4rpx;
+  font-size: 30rpx;
+}
+.calculate-car-price {
+  margin-top: 40rpx;
+  text-align: center;
+}
+.calculate-icon {
+  width: 100rpx;
+  height: 100rpx;
+}
+.calculate-item-gray {
+  opacity: .6;
+}
+.calculate-ite-active {
+  opacity: 1;
+  font-size: 32rpx;
+}
+.calculate-ite-active .calculate-icon {
+  width: 140rpx;
+  height: 140rpx;
+}
+.calculate-set {
+  text-align: center;
+}
+.text-gray {
+  color: #999;
+}
+.text-msg {
+  font-size: 26rpx;
+}
+.banner-bottom {
+  margin: 30rpx auto 60rpx;
+  width: 730rpx;
+  height: 240rpx;
+}
+.cart-type-item {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 36rpx;
+}
+.text-item {
+  margin-right: 55rpx;
+}

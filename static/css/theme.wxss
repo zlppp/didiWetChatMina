@@ -1,0 +1,40 @@
+/* ==================
+        初始化
+ ==================== */
+page {
+	/* 标准色 */
+  --theme: #ff740a;
+  --labelbg: #fef4ec;
+  --border: #e5e5e5;
+  --red: #e54d42;
+	--black: #333;
+	--darkGray: #666;
+	--lightGray: #999;
+	--gray: #aaa;
+  --ghostWhite: #f1f1f1;
+  --darkWhite: #fafafa;
+  --lightWhite: #fbfbfb;
+	--white: #fff;
+  --searchBg: #ececec;
+  --shallowWhite: #f5f5f5;
+  --vWhite: #f9f9f9;
+  --numberBall: #fc4001;
+  --bgColor: #f6f7f9;
+  --grey: #ddd;
+  --tag: #ff8b1b;
+  --tip: #FF652D;
+	/* 渐变色 */
+  --gradualImageLabel: linear-gradient(39deg, #FE8C00 0%, #FF5800 100%);
+  --gradualFlatButton: linear-gradient(60deg, #F98A22 0%, #FF620C 100%);
+  --gradualRoundButton: linear-gradient(46deg, #FF8021 0%, #FF4B00 100%);
+  --gradualBlockButton: linear-gradient(90deg, #FF8C21 0%, #FF5A00 100%);
+  --gradualShopCartBall: linear-gradient(46deg, #FF8C21 0%, #FF5A00 100%);
+	/* 阴影透明色 */
+
+  height: 100%;
+	background-color: var(--bgColor);
+	color: var(--black);
+	font-size: 28rrpx;
+  font-weight: normal;
+  font-family: "PingFangSC", Helvetica Neue, Helvetica, sans-serif;
+}

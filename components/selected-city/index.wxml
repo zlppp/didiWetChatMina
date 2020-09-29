@@ -1,0 +1,20 @@
+
+<view class="city-warp">
+  <!-- 城市列表 -->
+  <view class="city-list">
+    <scroll-view class="scroll-view" style="height: {{scrollHeight}}rpx" scroll-y="true" scroll-into-view="{{scrollTopId}}" scroll-with-animation="true" enable-back-to-top="true">
+      <view wx:for="{{sortCityList}}" wx:for-index="index"  wx:for-item="item" wx:key="{{index}}" >
+        <view id="{{item.index}}" class="letter-name">{{item.index}}</view>
+        <view class="city-item" bindtap="handCity" wx:for="{{item.list}}" wx:for-item="subItem" data-item="{{subItem}}"  wx:key="{{subIndex}}">
+          {{subItem.fullName}}
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 首字母快捷键 -->
+  <view class="letter-fast" touchmove="touchmove">
+  <view class="letter-fast-index" wx:for="{{sortCityList}}" wx:for-index="index" wx:for-item="item" wx:key="{{index}}">
+    <text bindtap="selecteChooseHandle" touchmove="touchmove" id="{{item.index}}">{{item.index}}</text></view>
+  </view>
+</view>

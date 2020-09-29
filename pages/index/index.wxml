@@ -1,0 +1,50 @@
+<view class="container">
+  <!-- 导航 -->
+  <view class="header-car-model dis-flex flex-vertical-center">
+    <!-- <open-data type="userAvatarUrl"
+      default-avatar=""
+      class="header-avatar"></open-data> -->
+    <view class="cart-type-item">
+      <!-- <scroll-view scroll-x="true" style="width: 300rrpx"> -->
+      <text bindtap="bindCartType" class="text-item">顺风车</text>
+      <text bindtap="bindCartType" class="text-item current-car">快车</text>
+      <text bindtap="bindCartType" class="text-item">专车</text>
+      <text bindtap="bindCartType" class="text-item">出租车</text>
+      <!-- </scroll-view> -->
+    </view>
+    <view></view>
+  </view>
+  <!-- 内容 -->
+  <view class="car-main">
+    <view class="margin-15">
+      <text class="dis-block margin-bottom-15 text-msg">附近暂无车可用，请稍后</text>
+      <view class="adress-model">
+        <label class="adress-spot dis-flex flex-vertical-center margin-bottom-5" bindtap="handleFromAddress">
+          <view class="icon-siping"></view>
+          <view>{{fromAddressInfo.address || '从哪出发'}}</view>
+        </label>
+        <label class="adress-spot dis-flex flex-vertical-center" bindtap="handleToAddress">
+          <view class="icon-siping icon-siping-yellow"></view>
+          <text class="{{!toAddressInfo.title && 'text-gray'}}">{{toAddressInfo.title || '你要去哪'}}</text>
+        </label>
+      </view>
+    </view>
+    <!-- 距离金额信息 -->
+    <view class="calculate-warp" wx:if="{{forecastPriceList[0].price}}">
+      <view class="dis-flex calculate-set">
+        <view class="flex-1">现在出发</view>
+        <view class="flex-1">换乘车人</view>
+        <view class="flex-1">个人支付</view>
+      </view>
+      <view class="calculate-car-price dis-flex flex-vertical-center">
+        <view wx:for="{{forecastPriceList}}" wx:for-index="index"  wx:for-item="item" wx:key="{{index}}" class="flex-1 calculate-item-gray animation-duration {{carTypeActive === index && 'calculate-ite-active'}}"  data-index="{{index}}" bindtap="chooseCarType">
+          <view>{{item.type}}</view>
+          <image class="calculate-icon" src="../../static/images/icon-car.png" />
+          <view>预计{{item.price}}元</view>
+        </view>
+      </view>
+    </view>
+    <button class="confim-button" bindtap="confirmTaxi">呼叫快车</button>
+    <image class="banner-bottom" src="../../static/images/banner-cart.jpg" />
+  </view>
+</view>

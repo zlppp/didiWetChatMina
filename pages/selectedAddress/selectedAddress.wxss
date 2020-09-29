@@ -1,0 +1,40 @@
+.select-address-bottom {
+  position: fixed;
+  bottom: 30rpx;
+  left: 25rpx;
+  width: 700rpx;
+  padding: 20rpx 0;
+  border-radius: 4rpx;
+  background: #fff;
+}
+.address-btn {
+  padding: 0 !important;
+  width: 80rpx !important;
+  margin: 0 !important;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-weight: normal;
+  font-size: 32rpx;
+}
+.title-address {
+  margin: 15rpx 0 8rpx;
+  font-size: 32rpx;
+}
+.detail-address {
+  color: #808080;
+  font-size: 28rpx;
+}
+.icon-start-point {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80rpx;
+  height: 80rpx;
+  margin: -40rpx 0 0 -40rpx;
+}
+.icon-map {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 10px;  
+}

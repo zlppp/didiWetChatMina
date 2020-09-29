@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'iconfont';  /* project id 1960956 */
+  src: url('//at.alicdn.com/t/font_1960956_97i23z5zieb.eot');
+  src: url('//at.alicdn.com/t/font_1960956_97i23z5zieb.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1960956_97i23z5zieb.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1960956_97i23z5zieb.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1960956_97i23z5zieb.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1960956_97i23z5zieb.svg#iconfont') format('svg');
+}
+
+
+/* 字体图标 */
+.iconfont {
+  font-family: 'iconfont' !important;
+  speak: none;
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: baseline;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-qidian1 {
+  
+}

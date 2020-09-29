@@ -1,0 +1,7 @@
+<!-- 无数据页面 -->
+<view class="dis-flex flex-center ">
+  <view class="empty-warp">
+    <image class="empty-icon" src="../../static/images/icon-empty.png"></image>
+    <text class="empty-title">暂无结果，换个词试试吧</text>
+  </view>
+</view>

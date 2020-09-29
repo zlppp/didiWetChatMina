@@ -1,0 +1,22 @@
+<view>
+  <cover-image class="icon-start-point" src="../../static/images/icon-start-point.png"></cover-image>
+  <map
+    id="map"
+    longitude="{{longitude}}"
+    latitude="{{latitude}}"
+    scale="16"
+    bindregionchange="regionchange"
+    show-location
+    style="width: 100%; height: {{mapHeight}}px;">
+  </map>
+  <view class="select-address-bottom dis-flex flex-horizontal-between">
+    <view class="dis-flex flex-horizontal-start">
+      <image src="../../static/images/icon-map-start.png" class="icon-map"></image>
+      <view>
+        <view class="title-address">{{addressInfo.address}}</view>
+        <view class="detail-address">{{addressInfo.recommend}}</view>
+      </view>
+    </view>
+    <view class="address-btn" bindtap="handleFrom">确定</view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "selected-city": "/components/selected-city/index",
+    "header-search": "/components/header-search/index"
+  }
+}

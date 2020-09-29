@@ -1,0 +1,12 @@
+.empty-warp {
+  margin-top: 80rpx;
+  text-align: center;
+}
+.empty-icon {
+  width: 60rpx;
+  height: 60rpx;
+}
+.empty-title {
+  display: block;
+  color: #999;
+}

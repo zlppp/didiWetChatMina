@@ -1,0 +1,14 @@
+<view class="search-warp ">
+  <view class="dis-flex flex-horizontal-start">
+    <slot></slot>
+    <view class="dis-flex flex-horizontal-between">
+      <input class="address-input input-width"
+      style="width: {{inputWidth}}px"
+      auto-focus
+      placeholder="{{placeholder}}"
+      bindinput="inputSearch"
+      value="{{backfill}}" />
+      <view class="cancel-btn" bindtap="cancel">{{searchBtnText}}</view>
+    </view>
+  </view>
+</view>

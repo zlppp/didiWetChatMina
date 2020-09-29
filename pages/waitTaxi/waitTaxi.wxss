@@ -1,0 +1,56 @@
+/* pages/waitTaxi/waitTaxi.wxss */
+.progress-bg {
+  width: 750rpx;
+  height: 600rpx;
+}
+.progress-canvas {
+  width: 100%;
+  height: 600rpx;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
+.progress-warp {
+  position: relative;
+}
+.wait-tips {
+  top: 200rpx;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 40rpx;
+}
+.wait-text {
+  margin-bottom: 40rpx;
+}
+.wait-itme {
+  color: #F59454;
+  font-size: 50rpx;
+}
+.header {
+  margin: 20rpx 0;
+  text-align: center;
+  color: #666;
+}
+.header-msg {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+}
+.adress-msg {
+  margin: 20px;
+}
+.cancel-btn {
+  display: block;
+  padding: 30rpx 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  background: #f1f1f1;
+  font-size: 40rpx;
+  text-align: center;
+  box-shadow: 2rpx 0 8px #ddd;
+}
+.message-height {
+  height: 280rpx;
+}

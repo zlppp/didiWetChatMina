@@ -1,0 +1,41 @@
+<view>
+  <!-- 搜索框 -->
+  <header-search slotWidth="{{!selectedCityData.isShow ? 140 : 250}}" placeholder="您要去哪儿" input-width="{{!selectedCityData.isShow && 'search-input'}}" searchBtnText="取消" bind:clickEvent="getsuggest" bind:cancel="searchCancel">
+    <view
+      wx:if="{{!selectedCityData.isShow}}"
+      class="dis-flex city-label flex-horizontal-between flex-vertical-center"
+      catchtap="selectedCity">
+      {{selectedCityData.cityData.name || '杭州'}} 
+      <image class="icon-drop" src="../../static/images/icon-drop-down.png"></image>
+    </view>
+    <view wx:else>
+      <input class="city-search" placeholder="城市中文名或拼音"/>
+    </view>
+  </header-search>
+  <block wx:if="{{!selectedCityData.isShow}}">
+    <view wx:if="{{suggestion.length}}" class="suggestion-list">
+    <!--关键词输入提示列表渲染-->
+      <view class="suggestion-item" wx:for="{{suggestion}}" wx:key="index">
+      <!--绑定回填事件-->
+       <view bindtap="confirmSelected" data-item="{{item}}" class="dis-flex flex-horizontal-start flex-vertical-center">
+          <image class="icon-city" src="../../static/images/icon-city.png"></image>
+          <view>
+          <!--根据需求渲染相应数据-->
+          <!--渲染地址title-->
+            <view class="suggestion-item-title" bindtap="backfill" id="{{index}}">{{item.title}}</view>
+          <!--渲染详细地址-->
+            <view class="suggestion-item-detail">{{item.addr}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- <z-empty wx:else/> -->
+  </block>
+  <block wx:else>
+    <!-- 选择城市 -->
+    <selected-city
+      wx:if="{{selectedCityData.isShow}}"
+      cityList="{{selectedCityData.allCityList}}"
+      bind:confirm="confirmCity" />
+  </block>
+</view>
