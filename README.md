@@ -1,1 +1,1 @@
-# didiWetChatMina
+# 模拟旧版本滴滴小程序

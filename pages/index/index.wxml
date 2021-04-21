@@ -6,7 +6,7 @@
       class="header-avatar"></open-data> -->
     <view class="cart-type-item">
       <!-- <scroll-view scroll-x="true" style="width: 300rrpx"> -->
-      <text bindtap="bindCartType" class="text-item">顺风车</text>
+      <!-- <text bindtap="bindCartType" class="text-item">顺风车</text> -->
       <text bindtap="bindCartType" class="text-item current-car">快车</text>
       <text bindtap="bindCartType" class="text-item">专车</text>
       <text bindtap="bindCartType" class="text-item">出租车</text>

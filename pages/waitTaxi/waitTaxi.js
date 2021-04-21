@@ -1,4 +1,5 @@
 // pages/waitTaxi/waitTaxi.js
+const app = getApp()
 Page({
   colorStyle: {
     grayBg: '#f1f1f1',
@@ -15,7 +16,9 @@ Page({
     },
     second: 0,
     countTimer: null,
-    randomTime: 0  // 随机生成一个120秒内的等待时间
+    randomTime: 0,  // 随机生成一个120秒内的等待时间
+    address: '' //上车地点
+    
   },
   /**
    * 生命周期函数--监听页面加载
@@ -24,9 +27,10 @@ Page({
     this.createdCanvas(this.colorStyle.grayBg)
     this.countInterval()
     this.setData({
-      randomTime: parseInt(Math.random() * 120)
+      randomTime: parseInt(Math.random() * 120),
+      address: app.globalData.fromAddressInfo.address
     })
-    console.log(this.data.randomTime)
+    console.log(this.data.randomTime, app.globalData.fromAddressInfo.address)
   },
   /**
    * 绘制底色 圆心
@@ -108,13 +112,14 @@ Page({
    */
   cancelOrder () {
     let { minute, second } = this.data.waitTime
-    
     console.log( this.data.waitTime)
+    let that = this
     wx.showModal({
       title: '',
       content: `已等待${minute && minute + '分'}${second && +second + '秒'}，是否确认取消？`,
       success (res) {
         if (res.confirm) {
+          clearInterval(that.countTimer)
           wx.navigateTo({
             url: '/pages/index/index'
           })

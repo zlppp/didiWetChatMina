@@ -1,7 +1,7 @@
 <view class="search-warp ">
   <view class="dis-flex flex-horizontal-start">
     <slot></slot>
-    <view class="dis-flex flex-horizontal-between">
+    <view class="dis-flex flex-horizontal-between address-flex">
       <input class="address-input input-width"
       style="width: {{inputWidth}}px"
       auto-focus

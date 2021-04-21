@@ -27,7 +27,6 @@
   height: 40rpx;
 }
 .city-label {
-  width: 120rpx;
   padding: 0 20rpx;
   text-align: center;
 }

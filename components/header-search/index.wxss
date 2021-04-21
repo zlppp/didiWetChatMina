@@ -16,10 +16,13 @@ page {
   padding: 0 20rpx;
 }
 .address-input {
+  flex: 1;
   height: 100rpx;
-  width: auto;
 }
 .cancel-btn {
-  width: 120rpx;
+  width: 150rpx;
   text-align: center;
+}
+.address-flex {
+  flex: 1;
 }

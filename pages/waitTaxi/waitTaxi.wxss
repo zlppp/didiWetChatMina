@@ -37,7 +37,7 @@
   font-size: 28rpx;
 }
 .adress-msg {
-  margin: 20px;
+  margin: 20px 20px 0 20px;
 }
 .cancel-btn {
   display: block;
@@ -53,4 +53,8 @@
 }
 .message-height {
   height: 280rpx;
+}
+.adress-info {
+  margin: 10px 20px 20px 20px;
+  color: #F69C68;
 }

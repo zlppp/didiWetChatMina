@@ -22,7 +22,7 @@ Page({
     isTakeTaxi: false, // 是否可以呼叫快车
     forecastPriceList: [ // 预计车辆价格
       {
-        type: '拼车',
+        type: '出租车',
         price: ''
       },  {
         type: '快车',

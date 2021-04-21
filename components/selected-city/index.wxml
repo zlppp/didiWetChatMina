@@ -15,6 +15,9 @@
   <!-- 首字母快捷键 -->
   <view class="letter-fast" touchmove="touchmove">
   <view class="letter-fast-index" wx:for="{{sortCityList}}" wx:for-index="index" wx:for-item="item" wx:key="{{index}}">
-    <text bindtap="selecteChooseHandle" touchmove="touchmove" id="{{item.index}}">{{item.index}}</text></view>
+    <text  touchstart="touchstartLetter" touchmove="touchmove" data-index="{{item.index}}">{{item.index}}</text></view>
   </view>
+  <!-- bindtap="selecteChooseHandle" -->
+  <!-- 选中的字母显示 -->
+  <view class="selected-letter" wx:if="{{isShowLetter}}" animation="{{animationData}}" style="opacity: 100">{{selectedLetter}}</view>
 </view>

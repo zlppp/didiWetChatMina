@@ -7,7 +7,8 @@ Component({
   properties: {
     cityList: { // 城市列表
       type: Array,
-      default: []
+      default: [],
+      animationData: {}
     }
   },
   
@@ -18,7 +19,12 @@ Component({
     copyCityList: [], // 城市列表副本 
     sortCityList: [], // 根据字母排序后的城市列表
     scrollTopId: '',
-    scrollHeight: ''
+    scrollHeight: '',
+    selectedLetter: '', // 选中的字母
+    isShowLetter: false
+  },
+  onShow () {
+    
   },
   ready () {
     let cityList = this.data.cityList
@@ -98,13 +104,38 @@ Component({
      * 跳转到对应字母，将首字母赋值
      */
     selecteChooseHandle(e) {
+      console.log(e.target.dataset.index, 'eee')
+      let index= e.target.dataset.index
+      let top = wx.createSelectorQuery().in(this)
+      this.isShowLetter = true
       this.setData({
-        scrollTopId: e.target.id
+        isShowLetter: true
       })
+      top.select('#' + index).boundingClientRect(rect=>{
+        wx.pageScrollTo({
+          scrollTop: rect.top - 100,
+          duration: 500
+        })
+        console.log(rect, 'rect')
+        }).exec()
+     
+      this.setData({
+        scrollTopId: e.target.id,
+        selectedLetter: index
+      })
+      setTimeout(() => {
+        this.setData({
+          isShowLetter: false
+        })
+      }, 1000);
       console.log(e)
     }, 
     touchmove () {
       console.log(11)
+    },
+    touchstartLetter () {
+      console.log('anxiale ')
     }
+    
   }
 })

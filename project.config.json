@@ -87,6 +87,12 @@
 					"pathName": "pages/order/order",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "城市选择",
+					"pathName": "pages/toEndAddress/toEndAddress",
+					"scene": null
 				}
 			]
 		}

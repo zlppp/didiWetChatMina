@@ -2,13 +2,14 @@
 <view class="wait-taxi-main">
   <view class="message-height">
     <view class="adress-msg">您上车地点为</view>
+    <view class="adress-info">{{ address }}</view>
     <view class="header">
       <view class="header-title">正在为您寻找车辆</view>
       <view class="header-msg">每人一小步，更快更顺路</view>
     </view>
   </view>
   <view class="progress-warp">
-    <canvas class="progress-bg"   canvas-id="canvasProgressbg">  </canvas>
+    <canvas class="progress-bg" canvas-id="canvasProgressbg">  </canvas>
     <canvas class="progress-canvas" canvas-id="canvasProgress"></canvas>
     <view class="wait-tips">
       <view class="wait-text">已等待</view>
