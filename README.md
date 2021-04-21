@@ -1,5 +1,6 @@
 # 模拟旧版本滴滴小程序
 ## 项目目录结构
+```
 C:.
 │  app.js
 │  app.json
@@ -115,3 +116,4 @@ C:.
     └─sdk
             qqmap-wx-jssdk.min.js
             
+```
